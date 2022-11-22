@@ -1,1 +1,38 @@
+button {
+    border: none;
+}
 
+button:hover {
+    color: white;
+    transition: 1s;
+}
+
+.overlay {
+    position: absolute;
+    text-align: left;
+    color: white;
+    padding: 0 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+}
+
+.caption:hover .overlay, .caption:hover h2 {
+    transition: .5s;
+    transform: translateY(0);
+}
+
+h2 {
+    transform: translateY(calc(-100% - 30px));
+}
+
+img {
+    display: block;
+}
+
+.caption:hover img {
+    filter: brightness(80%);
+    transition: .5s;
+}
